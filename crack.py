@@ -3,8 +3,8 @@ import subprocess
 
 # Define the keybinds as a dictionary for easier access
 keybinds = {
-    'WAKE_UP': 'adb shell input keyevent 26',
-    'NUMBER_1': 'adb shell input tap 200 700',
+    'WAKE_UP': 'adb shell input keyevent 26', #remove this if screen doesn't turn off on 30s expiral
+    'NUMBER_1': 'adb shell input tap 200 700', #you should modify these
     'NUMBER_2': 'adb shell input tap 400 700',
     'NUMBER_3': 'adb shell input tap 600 700',
     'NUMBER_4': 'adb shell input tap 200 800',
@@ -22,7 +22,7 @@ def execute_command(command):
     result = subprocess.run(command, shell=True)
     if result.returncode != 0:
         raise RuntimeError(f"Command '{command}' failed with return code {result.returncode}")
-    time.sleep(1.8)  # Wait for 2 seconds between each command
+    time.sleep(1.8)  # Wait for 2 seconds between each command, since adb has some delay
 
 def try_pin(pin):
     print(f"Trying pin code: {pin}")
@@ -48,7 +48,7 @@ def main():
             execute_command(keybinds['CLOSE_DIALOG'])
             execute_command(keybinds['CLOSE_DIALOG'])
 
-            # Wait for 27 seconds
+            # Some modern phones increment the time, so this script probably won't work. Ask Mistral AI to help you.
             print("Waiting for 28.3 seconds...")
             time.sleep(28.3)
 

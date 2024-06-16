@@ -11,3 +11,4 @@ INPUT NUMBER 9: adb shell input tap 600 1000
 INPUT NUMBER 0: adb shell input tap 420 1100
 INPUT ENTER: adb shell input tap 520 1100
 INPUT TO CLOSE DIALOG BOX: adb shell input keyevent 66 (TWICE)
+an example. this is not necessary.

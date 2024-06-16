@@ -1,0 +1,13 @@
+WAKE UP: adb shell input keyevent 26
+INPUT NUMBER 1: adb shell input tap 200 700
+INPUT NUMBER 2: adb shell input tap 400 700
+INPUT NUMBER 3: adb shell input tap 600 700
+INPUT NUMBER 5: adb shell input tap 300 800
+INPUT NUMBER 4: adb shell input tap 200 800
+INPUT NUMBER 6: adb shell input tap 600 800 
+INPUT NUMBER 7: adb shell input tap 200 1000 
+INPUT NUMBER 8: adb shell input tap 420 1000 
+INPUT NUMBER 9: adb shell input tap 600 1000
+INPUT NUMBER 0: adb shell input tap 420 1100
+INPUT ENTER: adb shell input tap 520 1100
+INPUT TO CLOSE DIALOG BOX: adb shell input keyevent 66 (TWICE)

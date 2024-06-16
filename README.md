@@ -1,5 +1,5 @@
 # android pin cracker
-If you have enabled usb debugging and have forgot your passcode, this tool is made for you! It was tested with Sony Xperia T (aliases: lt30p / mint). This script has no success detetion, so I'd recommend using a timlapse camera to film it (x10 speed is perfect)
+If you have enabled usb debugging and have forgot your passcode, this tool is made for you! It was tested with Sony Xperia T (aliases: lt30p / mint). This script has no success detetion, so I'd recommend using a timelapse camera to film it (x10 speed is perfect)
 ## Prerequisites
 - Python
 - adb (added to PATH)
